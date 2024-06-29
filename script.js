@@ -825,3 +825,94 @@
 // }
 // outer()
 
+
+// function createCounter(){
+//     let count = 0;
+
+//     function increment(){
+//         count++;
+//         console.log(`count increased to ${count}`);
+//     }
+//     function getCount(){
+//         return count;
+//     }
+//     return {increment, getCount};
+// }
+// const counter = createCounter();
+// counter.increment()
+// console.log(`the count will also increased by ${counter.getCount()}`);
+
+// let score = 0;
+// function increaseScore(points){
+//     points += score;
+//     console.log(`+${points}pts`);
+// }
+// function decreaseScore(points){
+//     score -= points;
+//     console.log(`-${points}pts`);
+// }
+// function getScore(){
+//     return score;
+// }
+
+// increaseScore(5)
+// increaseScore(6)
+// decreaseScore(30)
+// console.log(`the final score is: ${getScore()}`)
+
+
+
+
+
+                                        // SET TIMEOUT METHOD
+
+
+//  setTimeout(() => window.alert("Hello Mr Urban Pac"), 3000);
+
+// setTimeout(function(){
+//     return window.alert("Hello Urban Pac"),3000;
+// })
+
+//  function myButton(){
+//     setTimeout(() => window.alert("Hello Urban Pac you are deserve 
+// it for more you have participate!"),3000);
+//  }
+ 
+//                      ADDEVENTLISTENER("KEYDOWN", FUNCTION(){})
+
+
+// const myBox = document.getElementById("myBox");
+
+// document.addEventListener("keyup", event =>{
+//     myBox.textContent = "😅Whatsup!"
+//     myBox.style.backgroundColor = "tomato";
+//     myBox.style.width = "16rem";
+// })
+
+// const myBox = document.getElementById("myBox");
+
+// document.addEventListener("keydown", event =>{
+//     myBox.textContent = "😅Whatsup!"
+//     myBox.style.backgroundColor = "tomato";
+//     myBox.style.width = "16rem";
+// })
+
+
+const myButton = document.getElementById("myButton");
+const myImage = document.getElementById("myImage");
+
+myButton.addEventListener("click", () =>{
+
+    if(myImage.style.visibility === "hidden"){
+        myImage.style.visibility = "visible";
+        myButton.textContent = "Hide"
+    }else{
+        myImage.style.visibility = "hidden";
+        myButton.textContent = "Show";
+    }
+    
+   
+    
+   
+})
+     
